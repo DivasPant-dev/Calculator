@@ -1,0 +1,58 @@
+button {
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 4px 4px 0px black;
+    text-shadow: 4px 4px 10px white;;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+
+button:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+.operator {
+    background-color: hsl(40, 100%, 45%);
+    box-shadow: 4px 4px 0px hsl(40, 100%, 30%);;
+}
+
+.operator:hover {
+    background-color: hsl(40, 100%, 60%);
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 10px;
+}
+
+.c {
+    grid-area: -1 / -2 / -1 / -1;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+    width: 58%;
+    height: 50px;
+    font-size: 2rem;
+    text-align: right;
+    overflow: hidden;
+    color: black;
+}
